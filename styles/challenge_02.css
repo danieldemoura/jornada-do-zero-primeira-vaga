@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: 'Beth Ellen', cursive;
+    --text-default: 'Spectral', serif;
+    --mark-color: #5EEAD4;
+    --recipes-button-color: #5EEAD4;
+    font-size: 62.5%;
+}
+
+body {
+    background: url(../assets/background/background_03.png) no-repeat center / cover;
+    height: 100vh;
+    text-align: center;
+
+    display: grid;
+    place-content: center;
+}
+
+
+.home {
+    width: fit-content;
+    height: fit-content;
+
+    display: grid;
+    gap: 7.2rem;
+}
+
+.title {
+    font-family: var(--title);
+    font-size: 6.4rem;
+    font-weight: 400;
+
+    position: relative;
+}
+
+.mark {
+    color: var(--mark-color);
+}
+
+.paragraph {
+    font-family: var(--text-default);
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.btn-default {
+    width: 14.9rem;
+    line-height: 5.6rem;
+    border-radius: .8rem;
+
+    font-family: var(--text-default);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.btn-recipes, .btn-default:hover {
+    text-decoration: none;
+    background-color: var(--recipes-button-color);
+    color: black;
+}
+

@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white;
+    --font-title: 'Comfortaa', cursive;
+    --font-text: 'Roboto', sans-serif;
+    --border-color: #050507;
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    font-size: 16px;
+    background: #131419 no-repeat center / cover;
+    backdrop-filter: blur(.5rem);
+
+    display: grid;
+    place-items: center;
+
+    padding: 2rem 2rem;
+}
+
+.home {
+    width: 80%;
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    color: var(--text-color);
+    font-family: var(--font-text);
+}
+
+.title {
+    text-shadow: 0px 0px 5px #000;
+    font-family: var(--font-title);
+    font-size: 4.2rem;
+}
+
+.art-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.card {
+    width: 30%;
+    height: 315px;
+    min-width: 18.0rem;
+}
+
+.h2-title {
+    background-color: #4e45c3;
+    font-size: 1.6rem;
+
+    margin-bottom: -4rem;
+    border-radius: .5rem;
+    padding: .5rem 0rem;
+    transition: margin-bottom .6s ease;
+}
+
+.figure-image {
+    height: 104%;
+    overflow: hidden;
+    position: relative;
+    
+    border-radius: .5rem;
+    box-shadow: 0px 0px 1rem .5rem #101114b0;
+}
+
+.card:hover .h2-title {
+    margin-bottom: 2rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .7rem;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 1rem 1rem;
+    background-image: linear-gradient(to top,  #152262f0 50%, transparent 100%);
+}
